@@ -477,6 +477,7 @@ Response:
 HTTP GET /api/swap/v2/market/trades
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|---------|
 symbol      | string | 是 | 合约名称，如BTCUSDT
