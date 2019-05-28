@@ -121,8 +121,8 @@ Headers:
 	ACCESS-TIMESTAMP: 2019-05-22T03:33:53.562Z
 	Content-Type: application/json; charset=UTF-8
 	Cookie: locale=zh_CN
-Body: {"symbol":"ETHUSDT","orderType":"limit","leverage":"20","orderPrice":"147.7","quantity":"7","direction":"openLong","marginMode":"fixed","clientId":"1558496033481"}
-preHash: 2019-05-22T03:33:53.562ZPOST/api/swap/v2/order/place{"symbol":"ETHUSDT","orderType":"limit","leverage":"20","orderPrice":"147.7","quantity":"7","direction":"openLong","marginMode":"fixed","clientId":"1558496033481"}
+Body: {"symbol":"ETHUSDT","orderType":"limit","leverage":"20","orderPrice":"147.7","quantity":"7","direction":"openLong","clientId":"1558496033481"}
+preHash: 2019-05-22T03:33:53.562ZPOST/api/swap/v2/order/place{"symbol":"ETHUSDT","orderType":"limit","leverage":"20","orderPrice":"147.7","quantity":"7","direction":"openLong","clientId":"1558496033481"}
 ```
 - 签名算法验证：
 
