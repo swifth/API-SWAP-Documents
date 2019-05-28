@@ -386,12 +386,12 @@ Response:
 HTTP GET /api/swap/v2/market/klines
 ```
 请求参数：
-名称  | 类型  | 是否必填  | 说明
+名称  | 类型  | 是否必填  | 说明 |
 ---------|---------|---------|---------|
-symbol      | string | 是 | 合约名称，如BTCUSDT
-startTime   | string | 是 | 开始时间，ISO8601格式时间戳 到秒
-endTime     | string | 是 |截止时间，ISO8601格式时间戳 到秒
-resolution  | string | 是 | Kline粒度，取值范围参考说明
+symbol      | string | 是 | 合约名称，如BTCUSDT |
+startTime   | string | 是 | 开始时间，ISO8601格式时间戳 到秒 |
+endTime     | string | 是 |截止时间，ISO8601格式时间戳 到秒|
+resolution  | string | 是 | Kline粒度，取值范围参考说明|
 
 
 ```
