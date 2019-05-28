@@ -1,4 +1,4 @@
-# coinbene-swap-rest行情与交易接口
+# coinbene-swap-rest 合约openapi rest接口说明
 * [coinbene-swap-rest行情与交易接口](#coinbene-swap-rest行情与交易接口)
   * [基本信息](#基本信息)
   * [访问限制](#访问限制)
