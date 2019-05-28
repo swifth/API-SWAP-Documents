@@ -224,8 +224,9 @@ HTTP GET /api/swap/v2/market/orderBook?symbol=BTCUSDT
 ```
 
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明 |
---------- | --------|--------- | --------|
+--------- |--------|---------|--------|
 symbol | string | 是 | 合约名称，如BTCUSDT |
 size   | string | 否 | 深度档位，值有5、10、50、100。默认值10|
 
