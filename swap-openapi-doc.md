@@ -21,6 +21,8 @@
 
 ## 基本信息
 - 本篇列出REST接口的baseurl http://openapi-contract.coinbene.com
+- 需要科学上网，国内用户建议机器绑定host，104.16.127.19 openapi-contract.coinbene.com
+- 服务器部署在美西，建议api服务器也部署在美西减少网络延迟
 - 建议创建完API后，修改添加上自己服务器出口IP，进一步增强API安全性校验
 - 所有接口的响应都是JSON格式
 - 所有时间、时间戳均为UNIX时间，单位为毫秒
