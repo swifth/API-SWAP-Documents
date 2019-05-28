@@ -17,7 +17,7 @@
  	* [私有接口-获取指定订单信息](#私有接口-获取指定订单信息)
   	* [私有接口-查询历史订单](#私有接口-查询历史订单)
   	* [私有接口-批量撤单](#私有接口-批量撤单)
- * [错误代码汇总](#错误代码汇总)
+  * [错误代码汇总](#错误代码汇总)
 
 ## 基本信息
 - 本篇列出REST接口的baseurl http://openapi-contract.coinbene.com
@@ -386,6 +386,7 @@ Response:
 HTTP GET /api/swap/v2/market/klines
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明 |
 ---------|---------|---------|---------|
 symbol      | string | 是 | 合约名称，如BTCUSDT |
@@ -538,6 +539,7 @@ HTTP GET /api/swap/v2/account/info
 无
 
 返回结果参数
+
 名称   | 类型  | 说明
 ---------|---------|---------|
 availableBalance   | string | 可用余额
@@ -583,6 +585,7 @@ Response:
 HTTP GET /api/swap/v2/position/list
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|---------|
 symbol      | string | 否 | 合约名称，如BTCUSDT
@@ -672,6 +675,7 @@ Response:
 HTTP POST/api/swap/v2/order/place
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|---------|
 symbol      | string | 是 | 合约名称，如BTCUSDT
@@ -728,6 +732,7 @@ Response:
 HTTP POST/api/swap/v2/order/cancel
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|
 orderId      | string | 是 | 订单ID
@@ -767,6 +772,7 @@ Response:
 HTTP GET/api/swap/v2/order/openOrders
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|---------|
 symbol      | string | 否 | 合约名称，如BTCUSDT
@@ -859,6 +865,7 @@ Response:
 HTTP GET/api/swap/v2/order/info
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|---------|
 orderId      | string | 是 | 订单id
@@ -926,6 +933,7 @@ HTTP GET/api/swap/v2/order/closedOrders
 ```
 
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|---------|
 beginTime      | string | 否 | 开始时间，毫秒级时间戳
@@ -1014,6 +1022,7 @@ Response:
 HTTP POST/api/swap/v2/order/batchCancel
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---------|---------|---------|
 orderIds      | list<string> | 是 | 订单Id列表
