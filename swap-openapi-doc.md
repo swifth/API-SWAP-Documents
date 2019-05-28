@@ -51,7 +51,7 @@
 ## 签名方式
 所有接口请求头必须包含以下内容：
 - ACCESS-KEY 字符串类型的API key
-- ACCESS-SIGN 使用Base64转码签名
+- ACCESS-SIGN 使用Hex生成字符串
 - ACCESS-TIMESTAMP 发起请求的时间戳
 - 所有请求都应该含有application/json类型内容，并且是有效的JSON。
 
@@ -224,10 +224,10 @@ HTTP GET /api/swap/v2/market/orderBook?symbol=BTCUSDT
 ```
 
 请求参数：
-名称  | 类型  | 是否必填  | 说明
----|---|---|---
-symbol | string | 是 | 合约名称，如BTCUSDT
-size   | string | 否 | 深度档位，值有5、10、50、100。默认值10
+|名称  | 类型  | 是否必填  | 说明 |
+|---|---|---|---|
+|symbol | string | 是 | 合约名称，如BTCUSDT|
+|size   | string | 否 | 深度档位，值有5、10、50、100。默认值10|
 
 返回字段说明：
 
