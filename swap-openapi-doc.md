@@ -325,7 +325,7 @@ HTTP GET /api/swap/v2/market/tickers
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 symbol         | string | 合约名称，如BTCUSDT
 bestAskPrice   | string | 卖一价
 bestAskSize    | string | 卖一量
@@ -387,7 +387,7 @@ HTTP GET /api/swap/v2/market/klines
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 symbol      | string | 是 | 合约名称，如BTCUSDT
 startTime   | string | 是 | 开始时间，ISO8601格式时间戳 到秒
 endTime     | string | 是 |截止时间，ISO8601格式时间戳 到秒
@@ -405,7 +405,7 @@ resolution的值只能取["1", "3", "5", "15", "30",
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 time   | string | 生成时间
 open   | string | 开盘价格
 close   | string | 收盘价格
@@ -478,14 +478,14 @@ HTTP GET /api/swap/v2/market/trades
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 symbol      | string | 是 | 合约名称，如BTCUSDT
 limit  | string | 否 | 返回记录数，默认10，最大100
 
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 price   | string | 成交价格
 side   | string | 成交方向，s=主卖，b=主买
 volume   | string | 成交量（张）
@@ -538,7 +538,7 @@ HTTP GET /api/swap/v2/account/info
 
 返回结果参数
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 availableBalance   | string | 可用余额
 frozenBalance   | string | 冻结资产
 balance   | string | 账户余额
@@ -583,13 +583,13 @@ HTTP GET /api/swap/v2/position/list
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 symbol      | string | 否 | 合约名称，如BTCUSDT
 
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 availableQuantity   | string | 可平仓数量
 averagePrice   | string | 开仓均价
 createTime   | string | 仓位创建时间
@@ -672,7 +672,7 @@ HTTP POST/api/swap/v2/order/place
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 symbol      | string | 是 | 合约名称，如BTCUSDT
 direction      | string | 是 | 方向
 leverage      | string | 是 | 杠杆倍数
@@ -690,7 +690,7 @@ clientId      | string | 否 | 用户请求id，透传返回给用户
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 orderId   | string | 生成的订单id
 clientId   | string | 用户请求的clientId
 
@@ -728,13 +728,13 @@ HTTP POST/api/swap/v2/order/cancel
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|
 orderId      | string | 是 | 订单ID
 
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 data   | string | 撤销的订单Id
 
 ```
@@ -767,7 +767,7 @@ HTTP GET/api/swap/v2/order/openOrders
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 symbol      | string | 否 | 合约名称，如BTCUSDT
 pageNum      | string | 否 | 页码，默认第1页
 pageSize      | string | 否 | 单页记录数，默认10
@@ -783,7 +783,7 @@ pageSize      | string | 否 | 单页记录数，默认10
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 orderId   | string | 订单Id
 direction   | string | 方向
 leverage   | string | 杠杆倍数
@@ -859,13 +859,13 @@ HTTP GET/api/swap/v2/order/info
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 orderId      | string | 是 | 订单id
 
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 orderId   | string | 订单Id
 direction   | string | 方向
 leverage   | string | 杠杆倍数
@@ -926,7 +926,7 @@ HTTP GET/api/swap/v2/order/closedOrders
 
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|---------|
 beginTime      | string | 否 | 开始时间，毫秒级时间戳
 endTime      | string | 否 | 结束时间，毫秒级时间戳
 symbol      | string | 是 | 合约名称，如BTCUSDT
@@ -939,7 +939,7 @@ orderType      | string | 否 | 订单类型
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 orderId   | string | 订单Id
 direction   | string | 方向
 leverage   | string | 杠杆倍数
@@ -1014,13 +1014,13 @@ HTTP POST/api/swap/v2/order/batchCancel
 ```
 请求参数：
 名称  | 类型  | 是否必填  | 说明
----|---|---|---
+---------|---------|---------|
 orderIds      | list<string> | 是 | 订单Id列表
 
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---------|---------|---------|
 orderId   | string | 撤销的订单Id
 
 
