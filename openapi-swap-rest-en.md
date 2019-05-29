@@ -4,7 +4,7 @@
 * [Interface Type](#interface-type)
 * [Signature method](#signature-method)
 * [Interface Specification](#interface-specification)
-	* [Public interface - Get orderBook](#public-interface---get-orderbook)
+  * [Public interface - Get orderBook](#public-interface---get-orderbook)
 	* [Public interface - Get all ticker information](#public-interface---get-all-ticker-information)
         * [Public interface - Get K line data](#public-interface---get-k-line-data)
         * [Public Interface - Get the latest filled orders](#public-interface---get-the-latest-filled-orders)
