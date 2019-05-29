@@ -6,16 +6,16 @@
       	* [Interface Specification](#interface-specification)
 		* [Public interface - Get orderBook](#public-interface---get-orderbook)
 		* [Public interface - Get all ticker information](#public-interface---get-all-ticker-information)
-         * [Public interface - Get K line data](#public-interface---get-k-line-data)
-         * [Public Interface - Get the latest filled orders](#public-interface---get-the-latest-filled-orders)
-         * [Private Interface - Query Contract Account Information](#private-interface---query-contract-account-information)
-         * [Private Interface - Get Position Information](#private-interface---get-position-information)
-         * [Private Interface - Place an Order](#private-interface---place-an-order)
-         * [Private Interface - Cancel an Order](#private-interface---cancel-an-order)
-         * [Private Interface - Get  open orders](#private-interface---get--open-orders)
-         * [Private Interface - Get  order information](#private-interface---get--order-information)
-         * [Private Interface - Query History Order](#private-interface---query-history-order)
-         * [Private Interface - Cancel multiple Orders](#private-interface---cancel-multiple-orders)
+         	* [Public interface - Get K line data](#public-interface---get-k-line-data)
+         	* [Public Interface - Get the latest filled orders](#public-interface---get-the-latest-filled-orders)
+         	* [Private Interface - Query Contract Account Information](#private-interface---query-contract-account-information)
+         	* [Private Interface - Get Position Information](#private-interface---get-position-information)
+         	* [Private Interface - Place an Order](#private-interface---place-an-order)
+         	* [Private Interface - Cancel an Order](#private-interface---cancel-an-order)
+         	* [Private Interface - Get  open orders](#private-interface---get--open-orders)
+         	* [Private Interface - Get  order information](#private-interface---get--order-information)
+         	* [Private Interface - Query History Order](#private-interface---query-history-order)
+         	* [Private Interface - Cancel multiple Orders](#private-interface---cancel-multiple-orders)
       * [Error Code Summary](#error-code-summary)
 
 ## Basic Information
@@ -478,7 +478,7 @@ HTTP GET /api/swap/v2/market/trades
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 symbol | string | yes | contract name, such as BTCUSDT
 limit | string | no | return the number of records, default 10, maximum 100
@@ -585,7 +585,7 @@ HTTP GET /api/swap/v2/position/list
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 symbol | string | no | contract name, such as BTCUSDT
 
@@ -675,7 +675,7 @@ HTTP POST/api/swap/v2/order/place
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 symbol | string | yes | contract name, such as BTCUSDT
 direction | string | yes | direction
@@ -733,7 +733,7 @@ HTTP POST/api/swap/v2/order/cancel
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 orderId | string | yes | order ID
 
@@ -773,7 +773,7 @@ HTTP GET/api/swap/v2/order/openOrders
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 symbol | string | no | contract name, such as BTCUSDT
 pageNum | string | no | page number, default page 1
@@ -866,7 +866,7 @@ HTTP GET/api/swap/v2/order/info
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 orderId | string | yes | order id
 
@@ -934,7 +934,7 @@ HTTP GET/api/swap/v2/order/closedOrders
 
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 beginTime | string | no | start time, millisecond timestamp
 endTime | string | no | end time, millisecond timestamp
@@ -1023,7 +1023,7 @@ HTTP POST/api/swap/v2/order/batchCancel
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---------|---------|---------|---------|
 orderIds | list<string> | Yes | Order Id List
 
