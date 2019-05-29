@@ -63,7 +63,8 @@ ACCESS-SIGN的值生成规则：
 - Method是请求方法，字母全部大写：GET/POST
 - requestPath是请求接口路径，例如：/api/swap/v2/market/orderBook
 - body是指请求主体的字符串。GET请求没有body信息可省略；POST请求有body信息JSON串，例如{"symbol":"BTCUSDT","order_id":"7440"}
-- secket为用户申请API时所生成的。
+- secret为用户申请API时所生成的
+- 任何时候都请不要把secret透露给其他人或传输到服务器端
 
 接口请求样例：
 - GET协议接口两种情况: 
