@@ -1,4 +1,5 @@
-* [coinbene-swap-rest Contract openapi rest interface description](#coinbene-swap-rest-contract-openapi-rest-interface-description)
+# coinbene-swap-rest-contract-openapi-rest-interface-description)
+[中文版本](https://github.com/Coinbene/API-SWAP-Documents/blob/master/openapi-swap-rest.md)
 * [Basic Information](#basic-information)
 * [restriction of visit](#restriction-of-visit)
 * [Interface Type](#interface-type)
