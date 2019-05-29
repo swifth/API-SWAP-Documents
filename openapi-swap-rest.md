@@ -804,7 +804,7 @@ fee   | string | 手续费
 filledQuantity   | string | 成交量（张）
 averagePrice   | string | 平均成交价格
 orderTime   | string | 订单创建时间
-status   | string | 订单状态
+status   | string | 订单状态(new:挂单中,filled:完成成交,canceled:完全撤单,partiallyFilled:部分撤单）
 
 
 ```
@@ -887,7 +887,7 @@ fee   | string | 手续费
 filledQuantity   | string | 成交量（张）
 averagePrice   | string | 平均成交价格
 orderTime   | string | 订单创建时间
-status   | string | 订单状态
+status   | string | 订单状态(new:挂单中,filled:完成成交,canceled:完全撤单,partiallyFilled:部分撤单）
 
 
 
@@ -962,7 +962,7 @@ fee   | string | 手续费
 filledQuantity   | string | 成交量（张）
 averagePrice   | string | 平均成交价格
 orderTime   | string | 订单创建时间
-status   | string | 订单状态
+status   | string | 订单状态(new:挂单中,filled:完成成交,canceled:完全撤单,partiallyFilled:部分撤单）
 
 
 ```
