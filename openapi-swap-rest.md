@@ -335,7 +335,7 @@ bestAskPrice   | string | 卖一价
 bestAskSize    | string | 卖一量
 bestBidPrice   | string | 买一价
 bestBidSize    | string | 买一量
-latestPrice    | string | 最新价
+lastPrice    | string | 最新价
 markPrice      | string | 标记价格
 high24h        | string | 24h最高价
 low24h         | string | 24h最低价
