@@ -1,4 +1,4 @@
-* [coinbene-swap-rest Contract openapi rest interface description](#coinbene-swap-rest-contract-openapi-rest-interface-description)
+# [coinbene-swap-rest Contract openapi rest interface description](#coinbene-swap-rest-contract-openapi-rest-interface-description)
 	* [Basic Information](#basic-information)
       	* [restriction of visit](#restriction-of-visit)
       	* [Interface Type](#interface-type)
