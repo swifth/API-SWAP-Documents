@@ -61,7 +61,7 @@ ACCESS-SIGN value generation rules:
 - requestPath is the request interface path, for example: /api/swap/v2/market/orderBook
 - Body is the string of the request body. The GET request has no body information to omit; the POST request has a body information JSON string, such as {"symbol": "BTCUSDT", "order_id": "7440"}
 - The secret is generated when the user applies for the API
-- **$\color{red}{Do not disclose secret to others or transfer them to the server at any time}$**
+- **Do not disclose secret to others or transfer them to the server at any time**
 
 Sample interface request:
 - Two cases of GET protocol interface:
