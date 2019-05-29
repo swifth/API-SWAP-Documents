@@ -331,7 +331,7 @@ bestAskPrice | string | Sell one price
 bestAskSize | string | Sell a quantity
 bestBidPrice | string | Buy one price
 bestBidSize | string | Buy one
-latestPrice | string | Latest price
+lastPrice | string | Latest price
 markPrice | string | tag price
 high24h | string | 24h highest price
 low24h | string | 24h lowest price
