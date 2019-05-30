@@ -138,13 +138,16 @@ secret：9daf13ebd76c4f358fc885ca6ede5e27
 **
    * 生成签名
    *
-   * @param timeStamp   时间戳
    * @param method      请求方法：POST或者GET
    * @param requestUrl  url
    * @param requestBody 请求内容，没有传null
    * @param secret      密钥
    */
-  private String signForContractOpenApi(String timeStamp, String method, String requestUrl, String requestBody, String secret) {
+  private String signForContractOpenApi(String method, String requestUrl, String requestBody, String secret) {
+    final DateTimeFormatter utcFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+    String timestamp = utcFormatter.format(ZonedDateTime.now(ZoneOffset.UTC));
+    //NEVER use ZonedDateTime.now(ZoneOffset.UTC).toString(), 
+    //which may produce timestamp like 'yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z', but it depends.
     String shaResource = timeStamp + method + requestUrl + (requestBody == null ? "" : requestBody);
     System.out.println(shaResource);
     String signStr = sha256_HMAC(shaResource, secret);
@@ -216,6 +219,27 @@ class TestUtil(unittest.TestCase):
         self.assertEqual(sn, "a02a6428bb44ad338d020c55acee9dd40bbcb3d96cbe3e48dd6185e51e232aa2")
 
 
+
+样例代码（Kotlin版本）：
+private fun ByteArray.toHex() = this.joinToString(separator = "") { it.toInt().and(0xff).toString(16).padStart(2, '0') }
+private fun String.sha256(secretKey: String): ByteArray = HmacUtils.hmacSha256(secretKey, this)
+private val utcFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
+**
+   * 生成签名
+   *
+   * @param method      请求方法：POST或者GET
+   * @param requestUrl  url
+   * @param requestBody 请求内容，没有传null
+   * @param secret      密钥
+   */
+fun signForContractOpenApi(method: String, requestUrl: String, requestBody: String, secret:String) {
+    //NEVER use ZonedDateTime.now(ZoneOffset.UTC).toString(), 
+    //which may produce timestamp like 'yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z', but it depends.
+    val timestamp = utcFormatter.format(ZonedDateTime.now(ZoneOffset.UTC))
+    retrun "$timestamp${method.toUpperCase()}$requestUrl${body ?: ""}"
+                .sha256(apiSecret)
+                .toHex()
+}
 ```
 
 
